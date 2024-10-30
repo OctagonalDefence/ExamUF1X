@@ -1,16 +1,16 @@
 const fs = require('fs');
 
+
 //Tasca 1
 
 try {
 
-const data = fs.readFileSync('./Exam/productes.json', 'utf8');
+var dataJSON = fs.readFileSync('./Exam/productes.json', 'utf8');
 
 } catch (error) {
     console.error('Error:', error);
 }
 
-data = fs.readFileSync('./Exam/productes.json', 'utf8');
 
 function llegirProductes(json) {
 
@@ -22,7 +22,7 @@ function llegirProductes(json) {
 
 
 
-arrayProductes = llegirProductes(data);
+arrayProductes = llegirProductes(dataJSON);
 
 //Tasca 2
 
